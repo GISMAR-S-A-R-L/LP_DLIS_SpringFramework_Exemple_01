@@ -6,7 +6,7 @@
     http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
 
 	<bean id="salutation" class="fr.iutv.spring_framework.exemple_01.Message">
-		<property name="text" value="Salut, les élèves de la IUT-Vannes!!!" />
+		<property name="text" value="Salut, les élèves de l'IUT-Vannes!!!" />
 	</bean>
 
 </beans>

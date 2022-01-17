@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+	<bean id="moi" class="fr.iutv.spring_framework.exemple_02.Conducteur">
+		<property name="nom" value="BOBEFF" />
+		<property name="prenom" value="Gustavo" />
+	</bean>
+
+	<bean id="maVoiture" class="fr.iutv.spring_framework.exemple_02.Voiture">
+		<property name="marque" value="Porsche" />
+		<property name="modele" value="Panamera" />
+		<property name="conducteur" ref="moi" />
+	</bean>
+	
+
+</beans>
